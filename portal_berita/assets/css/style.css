@@ -1,0 +1,68 @@
+/* assets/css/style.css */
+
+/* ===== GLOBAL ===== */
+:root {
+    --merah: #C0392B;
+    --merah-gelap: #96281B;
+    --hitam: #1a1a1a;
+    --abu: #6c757d;
+    --krem: #FDF8F3;
+}
+
+a { transition: color 0.2s; }
+img { max-width: 100%; }
+
+/* ===== ARTICLE BODY ===== */
+.article-body h2,
+.article-body h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-body p {
+    margin-bottom: 1.2rem;
+}
+
+.article-body blockquote {
+    border-left: 4px solid var(--merah);
+    padding: 12px 20px;
+    background: #FDF8F3;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+/* ===== CARDS ===== */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ===== PAGINATION ===== */
+.page-link {
+    color: var(--merah);
+}
+.page-link:hover {
+    color: var(--merah-gelap);
+}
+
+/* ===== UTILITIES ===== */
+.text-merah { color: var(--merah) !important; }
+.bg-merah { background-color: var(--merah) !important; }
+.border-merah { border-color: var(--merah) !important; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+    .logo-text { font-size: 1.6rem !important; }
+    .breaking-bar .ticker { animation-duration: 15s; }
+}
